@@ -416,9 +416,56 @@
         </form>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button-modal" data-modal-close></button>
+        <h2 class="modal-logo">Залиште свої дані, ми вам передзвонимо</h2>
+
+        <form name="modal-form">
+          <label for="name-area" class="modal-lable">Ім'я</label>
+          <div class="modal-input-wrapper">
+            <input type="text" id="name-area" class="modal-input" />
+            <svg width="18" height="18" class="modal-icon">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+
+          <label for="tel-area" class="modal-lable">Телефон</label>
+          <div class="modal-input-wrapper">
+            <input type="tel" id="tel-area" class="modal-input" />
+            <svg width="18" height="18" class="modal-icon">
+              <use href="./images/icons.svg#icon-modal-phone"></use>
+            </svg>
+          </div>
+
+          <label for="email-area" class="modal-lable">Пошта</label>
+          <div class="modal-input-wrapper">
+            <input type="email" id="email-area" class="modal-input" />
+            <svg width="18" height="18" class="modal-icon">
+              <use href="./images/icons.svg#icon-modal-mail"></use>
+            </svg>
+          </div>
+
+          <label for="coment-area" class="coment-lable">Коментар</label>
+          <textarea
+            class="textarea-modal"
+            name="coment-area"
+            id="coment-area"
+            cols="30"
+            rows="10"
+            placeholder="Введіть текст"
+          ></textarea>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="checkbox" name="conditions" />
+            <label for="checkbox"
+              >Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label
+            >
+          </div>
+
+          <button type="submit" class="modal-submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./JS/modal.js"></script>
